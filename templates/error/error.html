@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% extends "layout.html" %}
+
+</head>
+
+
+
+<body>
+{% block body %}
+
+<style>
+
+   
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+       font-size:80px;
+       }
+       
+       .link_404{      
+  color: #fff!important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;}
+  .contant_box_404{ margin-top:-50px;}
+   
+</style>
+
+<div id="error-page">
+    <div class="content">
+       <h2 class="header" data-text="404">
+          404
+       </h2>
+       <h4 data-text="Opps! Page not found">
+          Opps! Page not found
+       </h4>
+       <p>
+          Sorry, the page you're looking for doesn't exist. If you think something is broken, report a problem.
+       </p>
+
+    </div>
+ </div>
+ 
+ <a href="/" class="btn btn-info">Return to Index</a>
+
+ {% endblock body %}
+
+
+</body>
+</html>
